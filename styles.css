@@ -45,15 +45,16 @@ nav ul li a:hover {
     border-radius: 4px;
 }
 
-/* Hero section */
+/* Hero section with full-screen background image */
 .hero {
-    background: url('your-hero-image.jpg') no-repeat center center/cover;
-    height: 80vh;
+    background: url('https://thefordhamram.com/wp-content/uploads/2018/04/C-Gabelli-Research-Kevin-Stoltenborg-900x501.jpg') no-repeat center center/cover;
+    height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
+    position: relative;
 }
 
 .hero-text h1 {
@@ -63,21 +64,6 @@ nav ul li a:hover {
 
 .hero-text p {
     font-size: 1.5em;
-    margin-bottom: 30px;
-}
-
-.cta-btn {
-    background-color: #f4b400;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-btn:hover {
-    background-color: #c79300;
 }
 
 /* Footer */
