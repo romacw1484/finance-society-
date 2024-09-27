@@ -13,32 +13,8 @@ html, body {
 /* Container for the whole hero section */
 .hero {
     position: relative;
-    background: url('https://thefordhamram.com/wp-content/uploads/2018/04/C-Gabelli-Research-Kevin-Stoltenborg-900x501.jpg') no-repeat center center/cover;
-    height: 125vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Logo box */
-.logo {
-    position: absolute; /* Reset default padding and margin */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Make sure body takes full height */
-html, body {
-    height: 100%;
-}
-
-/* Container for the whole hero section */
-.hero {
-    position: relative;
-    background: url('https://thefordhamram.com/wp-content/uploads/2018/04/C-Gabelli-Research-Kevin-Stoltenborg-900x501.jpg') no-repeat center center/cover;
-    height: 100vh; /* Full viewport height */
+    background: url('Hughes.JPG') no-repeat center center/cover;
+    height: 70vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,10 +26,10 @@ html, body {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 10px;
     font-family: 'Arial', sans-serif;
-    border: 2px solid black;
+    border: 3px solid black;
 }
 
 /* Navigation menu */
@@ -87,58 +63,77 @@ nav ul li a {
 .hero h1 {
     color: white;
     font-size: 48px;
-    margin-bottom: 20px;
-    font-family: 'Arial', sans-serif;
+    margin-top: 220px;
+    font-family: cursive;
 }
 
 .hero p {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
+    font-family: cursive;
+    margin-top: -5px;
+}
+
+/* Info Section */
+.info-section {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     font-family: 'Arial', sans-serif;
-    top: 20px;
-    left: 20px;
-    padding: 10px 20px;
-    font-family: 'Arial', sans-serif;
-    border: 2px solid black;
 }
 
-/* Navigation menu */
-nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.info-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-nav ul li a {
+.application-link {
+    color: #0073e6;
     text-decoration: none;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-/* Heading over the image */
-.hero-content {
+.divider {
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.board-signature {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/* Call to Action Button */
+.cta-button {
+    margin-top: 20px;
     text-align: center;
 }
 
-.hero h1 {
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0073e6;
     color: white;
-    font-size: 48px;
-    margin-bottom: 20px;
-    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
 }
-
-.hero p {
-    color: white;
-    font-size: 20px;
-    font-family: 'Arial', sans-serif;
+W1
+.button:hover {
+    background-color: #005bb5;
 }
