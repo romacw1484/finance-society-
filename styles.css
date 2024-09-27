@@ -14,7 +14,7 @@ html, body {
 .hero {
     position: relative;
     background: url('Hughes.JPG') no-repeat center center/cover;
-    height: 70vh; /* Full viewport height */
+    height: 110vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
     justify-content: center;
