@@ -28,8 +28,8 @@ html, body {
     left: 20px;
     background-color: rgb(255, 255, 255);
     padding: 30px 10px;
-    font-family: 'Arial', sans-serif;
-    border: 3px solid black;
+    font-family: cursive;
+    border: 3px solid #800000;
 }
 
 /* Navigation menu */
@@ -50,10 +50,42 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-family: "Rockwell Bold";
+    font-weight: bold;
+    font-size: 21px;
+    padding: 20px 15px;
+    border-radius: 8px;  /* Adds rounded corners */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    position: relative;
+    display: inline-block;
 }
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #800000;  /* Text color changes to match the logo border */
+    transform: translateY(-3px);  /* Lifts the tab slightly */
+}
+
+/* Underline effect */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #800000;  /* Matches logo border */
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
 
 /* Heading over the image */
 .hero-content {
