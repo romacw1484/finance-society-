@@ -38,7 +38,7 @@ html, body {
 /* Container for the whole hero section */
 .hero {
     position: relative;
-    background: url('https://thefordhamram.com/wp-content/uploads/2018/04/C-Gabelli-Research-Kevin-Stoltenborg-900x501.jpg') no-repeat center center/cover;
+    background: url('Hughes.JPG') no-repeat center center/cover;
     height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
