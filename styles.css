@@ -23,8 +23,7 @@ html, body {
 
 /* Logo box */
 .logo {
-    position: absolute/* Reset default padding and margin */
-* {
+    position: absolute; /* Reset default padding and margin */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -96,11 +95,8 @@ nav ul li a {
     color: white;
     font-size: 20px;
     font-family: 'Arial', sans-serif;
-}
-;
     top: 20px;
     left: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px 20px;
     font-family: 'Arial', sans-serif;
     border: 2px solid black;
