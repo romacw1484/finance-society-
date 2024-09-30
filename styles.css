@@ -27,12 +27,21 @@ html, body {
     top: 20px;
     left: 20px;
     background-color: rgb(255, 255, 255);
-    padding: 30px 10px;
+    padding: 20px;  /* Adjust padding as needed */
     font-family: cursive;
-    border: 3px solid #800000;
+    border: 5px solid #800000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Navigation menu */
+.logo img {
+    width: 130px; /* Adjust to a smaller width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 130px; /* Optionally, set a maximum height */
+}
+
+/* Navigati-on menu */
 nav {
     position: absolute;
     top: 20px;
