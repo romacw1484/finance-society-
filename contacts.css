@@ -1,119 +1,168 @@
-/* General Styles */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Navbar Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #800000;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+/* Navigati-on menu */
 nav {
-    background-color: #1b1b1b;
-    padding: 15px 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
+    font-family: "Rockwell Bold";
     font-weight: bold;
-    font-size: 16px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 21px;
+    padding: 20px 15px;
+    border-radius: 8px;  /* Adds rounded corners */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    position: relative;
+    display: inline-block;
 }
 
+/* Hover effect */
 nav ul li a:hover {
-    background-color: #575757;
+    color: #b64d4d;  /* Text color changes to match the logo border */
+    transform: translateY(-3px);  /* Lifts the tab slightly */
 }
 
-/* Container Styles */
-.container {
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+/* Underline effect */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #efefef;  /* Matches logo border */
+    transition: width 0.3s;
 }
 
-/* Header Styles */
-h1 {
-    font-size: 36px;
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.contact-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
-    color: #333333;
 }
 
-/* Contact Form Styles */
-form {
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #00457C;
+    outline: none;
+}
+
+.submit-btn {
+    padding: 1rem 2rem;
+    background-color: #00457C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #003359;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-form label {
-    font-size: 16px;
-    margin: 10px 0 5px;
+.footer-container p {
+    margin-bottom: 1rem;
 }
 
-form input, form textarea {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 15px;
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 
-form button {
-    background-color: #0073e6;
-    color: #ffffff;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.social-links a {
+    color: #fff;
+    text-decoration: none;
 }
 
-form button:hover {
-    background-color: #005bb5;
+.social-links a:hover {
+    text-decoration: underline;
 }
-
-/* Footer Styles */
-footer {
-    background-color: #1b1b1b;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 10px;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
-    h
