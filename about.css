@@ -9,35 +9,62 @@ body {
 
 /* Navbar Styles */
 nav {
-    background-color: #1b1b1b;
-    padding: 15px 0;
+    background-color: #4a1313;
+    padding: 35px 0;
+    top: 20px;
+    right: 20px;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: right;
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
+    font-family: "Rockwell Bold";
     font-weight: bold;
-    font-size: 16px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-size: 21px;
+    padding: 20px 15px;
+    border-radius: 8px;  /* Adds rounded corners */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    position: relative;
+    display: inline-block;
 }
 
+/* Hover effect */
 nav ul li a:hover {
-    background-color: #575757;
+    color: #800000;  /* Text color changes to match the logo border */
+    transform: translateY(-3px);  /* Lifts the tab slightly */
 }
+
+/* Underline effect */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #800000;  /* Matches logo border */
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
 
 /* Container Styles */
 .container {

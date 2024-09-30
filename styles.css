@@ -104,7 +104,7 @@ nav ul li a:hover::after {
 .hero h1 {
     color: white;
     font-size: 48px;
-    margin-top: 220px;
+    margin-top: 600px;
     font-family: cursive;
 }
 
@@ -117,18 +117,18 @@ nav ul li a:hover::after {
 
 /* Info Section */
 .info-section {
-    width: 80%;
+    width: 90%;
     margin: 50px auto;
     padding: 20px;
     text-align: center;
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
     border-radius: 10px;
-    font-family: 'Arial', sans-serif;
+    border: 1px solid #800000;
+    font-family: 'Helvetica Neue',;
 }
 
 .info-section h2 {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -178,3 +178,4 @@ W1
 .button:hover {
     background-color: #005bb5;
 }
+
