@@ -179,3 +179,8 @@ W1
     background-color: #005bb5;
 }
 
+.logo img {
+    max-width: 100%;   /* Ensures the image scales down */
+    height: auto;      /* Maintains the aspect ratio */
+}
+
