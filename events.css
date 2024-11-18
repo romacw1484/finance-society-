@@ -9,7 +9,18 @@ body {
     color: #333;
 }
 
-/* Navbar Styles */
+/*Logo Container */
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.fordham-logo {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
 /* Navbar Styles */
 nav {
     background-color: #4a1313;
@@ -138,3 +149,13 @@ p {
     }
 }
 
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black; /* Ensure it matches your design */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+}

@@ -17,6 +17,18 @@ header {
     padding: 1rem 0;
 }
 
+/*Logo Container */
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.fordham-logo {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
 /* Navigati-on menu */
 nav {
     position: absolute;
