@@ -1,0 +1,45 @@
+/* Show hamburger menu on smaller screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Make the hamburger menu visible */
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+    }
+
+    .hamburger i {
+        color: white;
+    }
+
+    /* Hide navigation links by default */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.9); /* Dark background for mobile */
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    /* Show navigation links when active */
+    .nav-links.active {
+        display: flex; /* Display menu on toggle */
+    }
+
+    /* Adjust spacing for mobile view */
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        color: white; /* Make links visible against dark background */
+        font-size: 1.2rem;
+    }
+}
