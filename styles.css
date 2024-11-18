@@ -128,9 +128,10 @@ nav ul li a:hover::after {
 }
 
 .info-section h2 {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     margin-bottom: 15px;
+    font-family: cursive;
 }
 
 .application-link {
