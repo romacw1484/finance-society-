@@ -178,3 +178,13 @@ footer {
 .social-links a:hover {
     text-decoration: underline;
 }
+
+.shadow-box {
+    background-color: #fff; /* White background */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 2rem auto;
+    max-width: 800px; /* Control width for larger screens */
+    text-align: center;
+}
